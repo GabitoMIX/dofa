@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis DOFA - Sistema de Gestión para Restaurantes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Gris oscuro para el fondo */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        .slide {
+            background-color: #1F2937; /* Gris un poco más claro para la lámina */
+            border-radius: 1rem;
+            padding: 2.5rem;
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            width: 100%;
+            max-width: 1200px;
+            border: 1px solid #374151;
+        }
+        .swot-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .swot-card {
+            background-color: #374151; /* Color base para las tarjetas */
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+        }
+        .swot-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .swot-card ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .swot-card li {
+            margin-bottom: 0.75rem;
+            line-height: 1.6;
+            color: #D1D5DB; /* Texto gris claro */
+        }
+        .strategies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2.5rem;
+        }
+        .strategy-card {
+            background-color: #374151;
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+        }
+        .strategy-card h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .strategy-card p {
+             color: #D1D5DB;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="slide text-white">
+        <!-- Título Principal -->
+        <header class="text-center">
+            <h1 class="text-4xl font-bold">Análisis Estratégico DOFA</h1>
+            <h2 class="text-xl text-gray-400 mt-2">Sistema de Gestión para Emprendimientos de Restaurantes en Cúcuta</h2>
+            <p class="text-sm text-gray-500 mt-1">Joel Pineda, Gabriel Medina, Camila Grateron - Interdisciplinar I: Gerencia Estratégica</p>
+        </header>
+
+        <!-- Matriz DOFA -->
+        <div class="swot-grid">
+            <!-- Fortalezas -->
+            <div class="swot-card border-l-4 border-green-500">
+                <h3 class="text-green-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                    Fortalezas (F)
+                </h3>
+                <ul>
+                    <li>✓ <strong>Bajo Costo y Rapidez:</strong> Implementación económica con Google Sheets y Apps Script.</li>
+                    <li>✓ <strong>Interfaz Amigable (UI/UX):</strong> Diseño intuitivo optimizado para usuarios no técnicos.</li>
+                    <li>✓ <strong>Gestión Integral:</strong> Módulos eficientes para pedidos, productos, clientes e inversiones.</li>
+                    <li>✓ <strong>Producto Confiable:</strong> Enfoque en pruebas exhaustivas para asegurar la fiabilidad.</li>
+                </ul>
+            </div>
+            <!-- Oportunidades -->
+            <div class="swot-card border-l-4 border-blue-500">
+                <h3 class="text-blue-400">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v.01M12 6v-1m0 1H9m3 0h3m-3 18c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z" /></svg>
+                    Oportunidades (O)
+                </h3>
+                <ul>
+                    <li>✓ <strong>Mercado en Expansión:</strong> Crecimiento del sector gastronómico y la digitalización en Cúcuta.</li>
+                    <li>✓ <strong>Auge Digital:</strong> Aumento del 150% en pedidos en línea, abriendo espacio para sistemas locales.</li>
+                    <li>✓ <strong>Iniciativas Locales:</strong> Programas como "Mentes Influyentes 2025" que impulsan la transformación.</li>
+                    <li>✓ <strong>Nuevas Tecnologías:</strong> Potencial para integrar tendencias como IA y pagos digitales.</li>
+                </ul>
+            </div>
+            <!-- Debilidades -->
+            <div class="swot-card border-l-4 border-yellow-500">
+                <h3 class="text-yellow-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
+                    Debilidades (D)
+                </h3>
+                <ul>
+                    <li>✗ <strong>Escalabilidad Limitada:</strong> Dependencia de herramientas básicas que no soportan grandes volúmenes.</li>
+                    <li>✗ <strong>Equipo Reducido:</strong> Tres personas, limitando la velocidad de desarrollo y el soporte post-despliegue.</li>
+                    <li>✗ <strong>Sin App Móvil Nativa:</strong> Ausencia de integraciones directas con plataformas de delivery.</li>
+                    <li>✗ <strong>Enfoque Local:</strong> Centrado en Cúcuta sin un plan de expansión regional claro.</li>
+                </ul>
+            </div>
+            <!-- Amenazas -->
+            <div class="swot-card border-l-4 border-red-500">
+                <h3 class="text-red-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" /></svg>
+                    Amenazas (A)
+                </h3>
+                <ul>
+                    <li>✗ <strong>Alta Competencia:</strong> Software establecidos (Siigo, Vendty, etc.) dominan el mercado.</li>
+                    <li>✗ <strong>Alta Informalidad:</strong> Un restaurante informal por cada formal reduce el mercado potencial.</li>
+                    <li>✗ <strong>Economía Local Incierta:</strong> Cierres de negocios y desafíos económicos en la región.</li>
+                    <li>✗ <strong>Obsolescencia Tecnológica:</strong> La rápida evolución tecnológica puede dejar atrás a sistemas básicos.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Estrategias -->
+        <div class="mt-8 pt-6 border-t border-gray-700">
+            <h3 class="text-2xl font-bold text-center mb-6">Estrategias Planteadas</h3>
+            <div class="strategies-grid">
+                <div class="strategy-card bg-green-900/50">
+                    <h4 class="text-green-300">🚀 Estrategia SO (Ofensiva)</h4>
+                    <p>Usar el bajo costo y la interfaz amigable para pilotear el sistema en restaurantes locales, integrando tendencias de pedidos en línea.</p>
+                </div>
+                <div class="strategy-card bg-blue-900/50">
+                    <h4 class="text-blue-300">🌱 Estrategia WO (Reorientación)</h4>
+                    <p>Expandir el equipo o buscar alianzas para agregar características móviles y de IA, capitalizando el crecimiento digital del sector.</p>
+                </div>
+                <div class="strategy-card bg-yellow-900/50">
+                    <h4 class="text-yellow-300">🛡️ Estrategia ST (Defensiva)</h4>
+                    <p>Diferenciarse con reportes detallados y seguridad robusta para competir con software establecidos y atraer al mercado informal.</p>
+                </div>
+                <div class="strategy-card bg-red-900/50">
+                    <h4 class="text-red-300">🏃 Estrategia WT (Supervivencia)</h4>
+                    <p>Reducir la dependencia de herramientas básicas migrando a frameworks más robustos para enfrentar riesgos competitivos y regulatorios.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+
